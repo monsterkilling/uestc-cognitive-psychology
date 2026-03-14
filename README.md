@@ -11,4 +11,4 @@
 
 ![IMG2](img/2.jpg)
 3.Releases里的压缩包包含了所有的笔记，可以直接下载
-[安装包链接](https://github.com/monsterkilling/uestc-cognitive-psychology/releases/tag/%E8%AE%A4%E7%9F%A5%E7%A5%9E%E7%BB%8F%E7%A7%91%E5%AD%A6%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93)
+[压缩包链接](https://github.com/monsterkilling/uestc-cognitive-psychology/releases/tag/%E8%AE%A4%E7%9F%A5%E7%A5%9E%E7%BB%8F%E7%A7%91%E5%AD%A6%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93)
