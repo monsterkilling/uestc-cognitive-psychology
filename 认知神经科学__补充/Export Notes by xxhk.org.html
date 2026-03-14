@@ -1,0 +1,123 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Export Notes by xxhk.org</title>
+<style>
+
+body { font-family: Arial, sans-serif; }
+.card { border: 2px solid #000; padding: 10px; border-radius: 10px; margin-bottom: 20px; }
+img {
+max-width: 100%;
+height: auto;
+border: 1px solid lightgray;
+border-radius: 10px;
+display: inline-block;
+margin: 10px 0px;
+}
+.separator { border-top: 1px dashed #000; margin: 10px 0; }
+.tags { background-color: lightgray; padding: 5px 10px; margin-bottom: 10px; border-radius: 5px; display: inline-block; }
+.footer {
+text-align: center;
+color: grey;
+margin-top: 20px;
+padding: 10px;
+}
+
+.video-container {
+margin: 10px 0;
+}
+.video-placeholder {
+position: relative;
+cursor: pointer;
+}
+.play-button {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 68px;
+height: 48px;
+background-color: rgba(0, 0, 0, 0.7);
+border-radius: 14px;
+cursor: pointer;
+}
+.play-button::before {
+content: '';
+position: absolute;
+top: 50%;
+left: 55%;
+transform: translate(-50%, -50%);
+border-style: solid;
+border-width: 12px 0 12px 20px;
+border-color: transparent transparent transparent white;
+}
+.play-button:hover {
+background-color: red;
+}
+
+</style>
+
+</head>
+<body>
+<div id="cards-container">
+<div class="card">
+<div class="field_0">蓝斑核与什么疾病有关</div>
+<div class="separator"></div>
+<div class="field_1"><img src="images/IMG_20250908_151706.jpg"></div>
+</div>
+<div class="card">
+<div class="field_0">蓝斑核的位置</div>
+<div class="separator"></div>
+<div class="field_1">位于脑干网状结构、第四脑室底与侧壁交<br>界处灰质的腹外侧区中脑与桥脑交界处<img src="images/IMG_20250908_151425.jpg"></div>
+</div>
+<div class="card">
+<div class="field_0">蓝斑核是什么的重要来源</div>
+<div class="separator"></div>
+<div class="field_1">含去甲肾上腺素（NA），是中枢神经系<br>统NA的重要来源<img src="images/IMG_20250908_151425.jpg"></div>
+</div>
+<div class="card">
+<div class="field_0">蓝斑核的作用</div>
+<div class="separator"></div>
+<div class="field_1"><img src="images/IMG_20250908_151425.jpg"></div>
+</div>
+<div class="card">
+<div class="field_0">勘误/更多相关资料请联系作者github</div>
+<div class="separator"></div>
+<div class="field_1">链接：<a href="https://github.com/monsterkilling/uestc-cognitive-psychology" aria-hidden="true">monsterkilling/uestc-cognitive-psychology: 电子科技大学心理学考研(312)复试资料分享</a></div>
+</div>
+
+<script>
+document.addEventListener('click', function(e) {
+const container = e.target.closest('.video-container');
+if (!container) return;
+
+const placeholder = container.querySelector('.video-placeholder');
+if (!placeholder) return;
+
+const videoId = container.dataset.videoId;
+const startParam = container.dataset.start || '';
+
+const iframe = document.createElement('iframe');
+iframe.width = '100%';
+iframe.height = '100%';
+iframe.src = `https://www.youtube.com/embed/${videoId}?${startParam.slice(1)}`;
+iframe.title = 'YouTube video player';
+iframe.frameBorder = '0';
+iframe.style.position = 'absolute';
+iframe.style.top = '0';
+iframe.style.left = '0';
+iframe.style.borderRadius = '15px';
+iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+iframe.allowFullscreen = true;
+
+placeholder.innerHTML = '';
+placeholder.appendChild(iframe);
+});
+</script>
+
+</div>
+<div class="footer">Made by <a href="https://xxhk.org">Export Notes - XXHK</a></div>
+</body>
+</html>
+
